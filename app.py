@@ -8,6 +8,10 @@ def home():
 @app.route("/health")
 def health():
     return "OK\n"
+    
+@app.route("/version")
+def version():
+    return "v2\n"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
